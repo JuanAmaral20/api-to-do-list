@@ -9,4 +9,6 @@ export const createTask = async (req, res) => {
       userId: req.userId,
     },
   });
+
+  res.status(201).json({ message: "Task created successfully" });
 };

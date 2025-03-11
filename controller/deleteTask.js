@@ -6,5 +6,5 @@ export const deleteTask = async (req, res) => {
       id: req.params.taskId,
     },
   });
-  res.status(204).send();
+  res.status(204).json({ message: "Task deleted successfully" });
 };

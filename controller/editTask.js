@@ -11,5 +11,5 @@ export const editTask = async (req, res) => {
       status: req.body.status,
     },
   });
-  res.status(204).send();
+  res.status(204).json({ message: "Task edited successfully" });
 };

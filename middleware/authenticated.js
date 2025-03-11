@@ -1,3 +1,4 @@
+import jwt from "jsonwebtoken";
 export function middleware(req, res, next) {
   const [, token] = req.headers.authorization.split(" ");
   try {
